@@ -1,0 +1,947 @@
+<?xml version="1.0"?>
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:bib="http://bibtexml.sf.net/" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:q="http://cnx.rice.edu/qml/1.0" xmlns:data="http://www.w3.org/TR/html5/dom.html#custom-data-attribute" id="new" cnxml-version="0.7" module-id="new">
+
+<title>Mean, Median, and Mode</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml"
+          mdml-version="0.5">
+  <!-- WARNING! The 'metadata' section is read only. Do not edit below.
+       Changes to the metadata section in the source will not be saved. -->
+  <md:repository>https://legacy-content04.cnx.org/content</md:repository>
+  <md:content-url>https://legacy-content04.cnx.org/content/m10026/latest/</md:content-url>
+  <md:content-id>m10026</md:content-id>
+  <md:title>Mean, Median, and Mode</md:title>
+  <md:version>1.8</md:version>
+  <md:created>2021/04/13 16:22:21 +0000</md:created>
+  <md:revised>2021/05/14 21:16:39.601 Universal</md:revised>
+  <md:actors>
+    <md:person userid="manager">
+      <md:firstname>First</md:firstname>
+      <md:surname>Last</md:surname>
+      <md:fullname>First Last</md:fullname>
+      <md:email>email@domain.com</md:email>
+    </md:person>
+  </md:actors>
+  <md:roles>
+    <md:role type="author">manager</md:role>
+    <md:role type="maintainer">manager</md:role>
+    <md:role type="licensor">manager</md:role>
+  </md:roles>
+  <md:license url="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License 4.0</md:license>
+  <!-- For information on license requirements for use or modification, see license url in the
+       above <md:license> element.
+       For information on formatting required attribution, see the URL:
+         CONTENT_URL/content_info#cnx_cite_header
+       where CONTENT_URL is the value provided above in the <md:content-url> element.
+  -->
+  <md:abstract></md:abstract>
+  <md:language>en</md:language>
+  <!-- WARNING! The 'metadata' section is read only. Do not edit above.
+       Changes to the metadata section in the source will not be saved. -->
+</metadata>
+
+<content><figure id="eip-idm278873536"><media id="eip-idm278896280" alt="Insert Alt Text">
+    <image mime-type="image/png" src="frog-placeholder.jpg"/>
+  </media></figure>
+<section id="fs-idm276954016" class="learning-objectives"><title>Learning Objectives</title>
+  <para id="fs-idm278136384">After completing this module, you should be able to:</para>
+    <list id="fs-idm276996608" list-type="enumerated" number-style="arabic"><item>Calculate mode of a data set 
+</item>
+      <item>Calculate the median of a data set 
+</item>
+<item>Calculate the mean of a data set 
+</item>
+<item>Contrast measures of central tendency to identify most representative average  
+</item>
+<item>Solve application problems involving mean, median and mode </item></list><para id="fs-idm213324656">What exactly do we mean when we describe something as â€œaverage?â€ Is the height of an average person the height that more people share than any other? Could it be better described this way: Line up every person in the world, in order from shortest to tallest, then find the person right in the middle. Is that personâ€™s height the average? Or maybe itâ€™s something more esoteric: Imagine a game where you and a friend are trying to guess the typical personâ€™s height. Once the guesses are made, you bring in every person and measure their height. You and your friend then figure out how far off each of your guesses were from the actual value, then square that number. The result is the number of points you earn for that person. After we check every height and award points accordingly, the person with the lower score wins (because a lower score means that personâ€™s guess was, overall, closer to the actual values). The person whose guess comes closest to the personâ€™s true height wins. Could we define the average height to be the number that you should guess to give you the smallest possible score? These are all methods of measuring <emphasis effect="italics">centrality</emphasis> (or <emphasis effect="italics">central tendency</emphasis>). Centrality is just a word that describes the middle of a set of data. All give potentially different results, and all are good for different reasons. In this module, weâ€™ll explore each of these methods of finding the average.
+</para></section><section id="eip-784"><title>The Mode</title><para id="eip-871">
+In our discussion of average heights, the first possible definition we offered was the height that more people share than any other. This is the <emphasis effect="italics">mode</emphasis>.
+</para><note id="eip-530"><title>Definition</title><para id="eip-idm347534416">The <term>mode</term> of a set of quantitative data is the value that appears most often. If more than one value ties for the most, then each of those are modes. If there are two modes, the data are called <term>bimodal</term>.</para></note><para id="eip-754">Letâ€™s look at some examples.
+</para><example id="eip-idm376679760">
+  <title>Finding the Mode Using a Stem-and-Leaf Plot</title>
+  <para id="eip-idm378235744">In Example 9, we looked at a stem-and-leaf plot of the sale prices (in dollars) of a particular collectible trading card:</para>
+  <table id="eip-753" summary=".">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>0</entry>
+    <entry>5 8 9</entry>
+  </row>
+  <row>
+    <entry>1</entry>
+    <entry>0 0 0 3 4 4 5 5 5 5 6 9 9</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>0 0 0 0 5 5 9 9</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>0 0 0 5 5</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>0 0 5</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry/>
+  </row>
+  <row>
+    <entry>6</entry>
+    <entry>0</entry>
+  </row>
+</tbody>
+</tgroup>
+</table><exercise id="eip-idm377295360">
+    <problem id="eip-idm367132336"><para id="eip-idm377139424">What is the mode price?</para></problem>
+    <solution id="eip-idm375302624"><para id="eip-idm373430304">The mode is the price that appears most often. Both 15 and 20 appear four times, more than any others. So, they are the modes (and we can conclude that this set of data is bimodal).</para></solution> 
+  </exercise>
+</example><note id="eip-idm327746282" class="your-turn">
+  
+  <exercise id="eip-idm346821920">
+    <problem id="eip-idm343497408"><para id="eip-idm342416272">In example 10, we constructed a stem-and-leaf plot for the number of times in one minute that different crickets chirped. Hereâ€™s the result: <table id="eip-788" summary=".">
+<tgroup cols="2"><tbody>
+  <row>
+    <entry>8</entry>
+    <entry>2 2 4 5 9 9 9</entry>
+  </row>
+  <row>
+    <entry>9</entry>
+    <entry>1 1 2 3 7 9</entry>
+  </row>
+  <row>
+    <entry>10</entry>
+    <entry>0 1 2 3 3 4 4 4 5 6 6 7 9 9</entry>
+  </row>
+  <row>
+    <entry>11</entry>
+    <entry>5 6</entry>
+  </row>
+  <row>
+    <entry>12</entry>
+    <entry>0</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+What is the mode?</para></problem>
+    <solution id="eip-idm331847744"><para id="eip-idm342846704">There are two modes: 89 and 104, each of which appears three times.</para></solution>
+  </exercise>
+</note><para id="eip-769">When we have a complete list of the data or a stem-and-leaf plot, itâ€™s pretty straightforward to find the mode; we just want the number that appears the most. If weâ€™re given a frequency distribution instead, the technique is different (but just as straightforward): weâ€™re looking for the number with the highest frequency.</para><example id="eip-559"><title>Finding the Mode Using a Frequency Distribution</title><para id="eip-idm378235724">In Example 3, we created a frequency distribution of the number of siblings of the people who attended a conflict resolution class. Hereâ€™s the result:</para>
+  <table id="eip-723" summary=".">
+<tgroup cols="2"><thead>  <row>
+    <entry>Number of siblings</entry>
+    <entry>Frequency</entry>
+  </row>
+</thead><tbody>
+  <row>
+    <entry>0</entry>
+    <entry>5</entry>
+  </row>
+  <row>
+    <entry>1</entry>
+    <entry>13</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>3</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>2</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>1</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table><exercise id="eip-idm377292360">
+    <problem id="eip-idm367193336"><para id="eip-idm377139924">What is the mode price?</para></problem>
+    <solution id="eip-idm375305624"><para id="eip-idm373435304">The mode is the value that appears the most often, which means it has the greatest frequency. Thirteen of the respondents have one sibling, more than any other number. So, the mode is one.</para></solution> 
+  </exercise>
+</example><note id="eip-idm327746028" class="your-turn">
+  
+  <exercise id="eip-idm346821770">
+    <problem id="eip-idm343437408"><para id="eip-idm342486272">In Your Turn 3, you found a frequency distribution for the number of people who shared a residence with people in a sample. Hereâ€™s the result:<table id="eip-7080" summary=".">
+<tgroup cols="2"><thead>  <row>
+    <entry>Number of people in the residence</entry>
+    <entry>Frequency</entry>
+  </row>
+</thead><tbody>
+  <row>
+    <entry>1</entry>
+    <entry>12</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>13</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>8</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>1</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table>
+Whatâ€™s the mode of the number of people in these residences?</para></problem>
+    <solution id="eip-idm341847744"><para id="eip-idm342886704">2</para></solution>
+  </exercise></note><para id="eip-251">One slightly weird thing about computing the mode is what happens if there is no number in your data that appears more than once. In that case, by our definition, every data value is a mode. But according to some other definitions, the data would have no mode. In practice, though, it doesnâ€™t really matter; if no data value appears more than once, then the mode is not helpful at all as a measure of centrality.</para></section><section id="eip-321"><title>The Median</title><para id="eip-54">
+Looking again at our example of trying to identify the height of the â€œaverageâ€ person, our second attempt involved lining everyone up in order by height and finding the person right in the middle; that personâ€™s height is called the <emphasis effect="italics">median</emphasis>.</para><note id="eip-idm372533152">
+  <title>Definition</title>
+  <para id="eip-idm372532512">The <term>median</term> of a set of quantitative data is a number with the property that no more than 50% of the data values are less than the median and no more than 50% of the data values are greater than the median.</para>
+</note><para id="eip-681">This is one of those definitions that is more complicated than the concept itâ€™s trying to describe (thatâ€™s to account for some technicalities that we donâ€™t need to worry about), so letâ€™s look at a really simple example. Consider the list of numbers 11, 12, 13, 13, 14. Look at the first number on the list: 11. Is it the median? Well, there are no values less than 11 (thatâ€™s 0%), and there are four values greater than 11 (thatâ€™s 80%). Since more than 50% of the data are greater than 11, the definition is violated and so itâ€™s not the median. Hereâ€™s a chart with the rest of the data, with red shading to show where the definition is violated:
+</para><table id="eip-533" summary=".">
+<tgroup cols="5"><tbody>
+  <row>
+    <entry>Data value</entry>
+    <entry>Number of values below</entry>
+    <entry>Percentage of values below</entry>
+    <entry>Number of values above</entry>
+    <entry>Percentage of values above</entry>
+  </row>
+  <row>
+    <entry><m:math><m:mn>11</m:mn></m:math></entry>
+    <entry><m:math><m:mn>0</m:mn></m:math></entry>
+    <entry><m:math><m:mn>0</m:mn><m:mo>%</m:mo></m:math></entry>
+    <entry><m:math><m:mn>4</m:mn></m:math></entry>
+    <entry><m:math><m:mn style="color: red">80</m:mn><m:mo style="color: red">%</m:mo></m:math></entry>
+  </row>
+  <row>
+   <entry><m:math><m:mn>12</m:mn></m:math></entry>
+    <entry><m:math><m:mn>1</m:mn></m:math></entry>
+    <entry><m:math><m:mn>20</m:mn><m:mo>%</m:mo></m:math></entry>
+    <entry><m:math><m:mn>3</m:mn></m:math></entry>
+    <entry><m:math><m:mn style="color: red">60</m:mn><m:mo style="color: red">%</m:mo></m:math></entry>
+  </row>
+  <row>
+   <entry><m:math><m:mn>13</m:mn></m:math></entry>
+    <entry><m:math><m:mn>2</m:mn></m:math></entry>
+    <entry><m:math><m:mn>40</m:mn><m:mo>%</m:mo></m:math></entry>
+    <entry><m:math><m:mn>1</m:mn></m:math></entry>
+    <entry><m:math><m:mn>20</m:mn><m:mo>%</m:mo></m:math></entry>
+  </row>
+  <row>
+   <entry><m:math><m:mn>14</m:mn></m:math></entry>
+    <entry><m:math><m:mn>4</m:mn></m:math></entry>
+    <entry><m:math><m:mn style="color: red">80</m:mn><m:mo style="color: red">%</m:mo></m:math></entry>
+    <entry><m:math><m:mn>0</m:mn></m:math></entry>
+    <entry><m:math><m:mn>0</m:mn><m:mo>%</m:mo></m:math></entry>
+  </row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table><para id="eip-139">Only 13 has no violations, so itâ€™s the median. Thatâ€™s how the definition works, but as I mentioned above: this definition is really more complicated than the concept itâ€™s describing. In practice, we find the median just like we described in the average height example above: by lining up all the data values in order from smallest to largest and picking the value in the middle. For our easy example (with data values 11, 12, 13, 13, 14), that first 13 is right in the middle; there are two values to the left and two values to the right. If thereâ€™s not one value right in the middle, we pick the two closest, then choose the number exactly between them. For example, letâ€™s say we have the data 41, 44, 46, 53. Since there are an even number of data values in our list, we canâ€™t pick the one right in the middle. The two closest to the middle are 44 and 46, so weâ€™ll choose the number halfway between those to be the median: 45. As this example shows, the median (unlike the mode) doesnâ€™t have to be a number in our original set of data! 
+</para><para id="eip-69">In the examples weâ€™ve looked at so far, itâ€™s been pretty easy to identify which number is right in the middle. If we had a very large dataset, though, it might be harder. Fortunately, we have some formulas to help us with that.</para><note id="eip-idm370881312">
+  <title>Formula</title>
+  <para id="eip-idm371447520">Suppose we have a set of data with <emphasis effect="italics">n</emphasis> values, ordered from smallest to largest. If <emphasis effect="italics">n</emphasis> is odd, then the median is the data value at position <m:math><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac></m:math>. If <emphasis effect="italics">n</emphasis> is even, then we find the values at positions <m:math><m:mfrac><m:mi>n</m:mi><m:mn>2</m:mn></m:mfrac></m:math> and <m:math><m:mfrac><m:mi>n</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mn>1</m:mn></m:math>. If those values are named a and b, then the median is defined to be <m:math><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:math>.</para></note><para id="eip-447">Letâ€™s put those formulas to work.</para><example id="eip-982"><title>Finding the Median Using a Stem-and-Leaf Plot</title><exercise id="eip-95"><problem id="eip-604">
+  <para id="eip-864">
+In Example 14, we looked at a stem-and-leaf plot of 33 of the sale prices (in dollars) of a particular collectible trading card:</para><table id="eip-888" summary=".">
+<tgroup cols="2"><thead>
+<row>
+<entry>Stem</entry>
+<entry>Leaf</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+<entry>0</entry><entry>5 8 9</entry>
+</row>
+<row>
+<entry>1</entry><entry>0 0 0 3 4 4 5 5 5 6 9 9</entry>
+</row>
+<row>
+<entry>2</entry><entry>0 0 0 0 5 5 9 9</entry>
+</row>
+<row>
+<entry>3</entry><entry>0 0 0 5 5</entry>
+</row>
+<row>
+<entry>4</entry><entry>0 0 5</entry>
+</row>
+<row>
+<entry>5</entry><entry/>
+</row>
+<row>
+<entry>6</entry><entry>0</entry>
+</row>
+</tbody>
+
+
+
+
+
+
+</tgroup>
+</table><para id="eip-374">What is the median price?</para>
+</problem>
+
+<solution id="eip-968">
+  <para id="eip-729">Since 33 is odd, the median is the data value at position <m:math><m:mfrac><m:mrow><m:mn>33</m:mn><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>17</m:mn></m:math>. Counting from the lowest value, we get:</para><figure id="eip-idm278893536"><media id="eip-idm278899280" alt="Insert Alt Text">
+    <image mime-type="image/png" src="frog-placeholder.jpg"/>
+  </media></figure><para id="fs-idm350894288">The seventeenth number is 20, so the median is 20.</para></solution>
+</exercise></example><note id="eip-idm350833936" class="your-turn">
+  
+  <exercise id="eip-idm349550432"><problem id="eip-idm350821984"><para id="eip-idm343152684">Find the median of the data given in this stem-and-leaf plot (there are 17 data values):
+</para><table id="eip-8668" summary=".">
+<tgroup cols="2"><thead>
+<row>
+<entry>Stem</entry>
+<entry>Leaf</entry>
+</row>
+</thead>
+
+<tbody>
+<row>
+<entry>12</entry><entry>1 2 2 5</entry>
+</row>
+<row>
+<entry>13</entry><entry>0 3 4 4 6 8</entry>
+</row>
+<row>
+<entry>14</entry><entry>2 5 9 9</entry>
+</row>
+<row>
+<entry>15</entry><entry>0 3</entry>
+</row>
+<row>
+<entry>16</entry><entry/>
+</row>
+<row>
+<entry>17</entry><entry>0</entry>
+</row>
+</tbody>
+
+
+
+
+
+
+
+</tgroup>
+</table></problem>
+    <solution id="eip-idm352342944"><para id="eip-idm349643200">136</para></solution>
+  </exercise>
+</note><para id="eip-48">Now, letâ€™s tackle an example with an even number of values.
+</para><example id="eip-41"><title>Finding the Median</title><exercise id="eip-540"><problem id="eip-200">
+<para id="eip-735">Back in Example 10, we looked at the number of times different crickets (of differing species, genders, etc.) chirped in a one-minute span. Here are the raw data:
+</para><table id="eip-6033" summary=".">
+<tgroup cols="6"><tbody>
+  <row>
+    <entry>89</entry>
+    <entry>97</entry>
+    <entry>82</entry>
+    <entry>102</entry>
+    <entry>84</entry>
+    <entry>99</entry>
+  </row>
+  <row>
+    <entry>115</entry>
+    <entry>105</entry>
+    <entry>89</entry>
+    <entry>109</entry>
+    <entry>107</entry>
+    <entry>89</entry>
+  </row>
+  <row>
+    <entry>101</entry>
+    <entry>109</entry>
+    <entry>116</entry>
+    <entry>103</entry>
+    <entry>100</entry>
+    <entry>91</entry>
+  </row>
+  <row>
+    <entry>93</entry>
+    <entry>103</entry>
+    <entry>120</entry>
+    <entry>91</entry>
+    <entry>85</entry>
+    <entry>104</entry>
+  </row>
+  <row>
+    <entry>104</entry>
+    <entry>82</entry>
+    <entry>106</entry>
+    <entry>92</entry>
+    <entry>104</entry>
+    <entry>106</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table><para id="eip-442">Find the median.</para>
+
+</problem>
+
+<solution id="eip-86">
+<list id="eip-24" list-type="enumerated" number-style="arabic" class="stepwise"><item>In order to find the median, we first need to sort the data so that theyâ€™re in order, smallest to largest:<table id="eip-603" summary=".">
+<tgroup cols="6"><tbody>
+  <row>
+    <entry>82</entry>
+    <entry>82</entry>
+    <entry>84</entry>
+    <entry>85</entry>
+    <entry>89</entry>
+    <entry>89</entry>
+  </row>
+  <row>
+    <entry>89</entry>
+    <entry>91</entry>
+    <entry>91</entry>
+    <entry>92</entry>
+    <entry>93</entry>
+    <entry>97</entry>
+  </row>
+  <row>
+    <entry>99</entry>
+    <entry>100</entry>
+    <entry>101</entry>
+    <entry>102</entry>
+    <entry>103</entry>
+    <entry>103</entry>
+  </row>
+  <row>
+    <entry>104</entry>
+    <entry>104</entry>
+    <entry>104</entry>
+    <entry>105</entry>
+    <entry>106</entry>
+    <entry>106</entry>
+  </row>
+  <row>
+    <entry>107</entry>
+    <entry>109</entry>
+    <entry>109</entry>
+    <entry>115</entry>
+    <entry>116</entry>
+    <entry>120</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></item>
+<item> Next, we figure out how many data values we have. Counting them up, we see there are 30, which is even.
+</item>
+<item>Since we have an even number of data values, we need to find the values in positions <m:math><m:mfrac><m:mn>30</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>15</m:mn></m:math> and <m:math><m:mfrac><m:mn>30</m:mn><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>16</m:mn></m:math>. These are 101 and 102.</item>
+<item>We use the formula to compute the median: <m:math><m:mfrac><m:mrow><m:mn>101</m:mn><m:mo>+</m:mo><m:mn>102</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>101.5</m:mn></m:math>.
+</item></list>
+</solution>
+</exercise></example><note id="eip-idm350873936" class="your-turn"><exercise id="eip-idm349150432"><problem id="eip-idm3508219484"><para id="fs-idm243377616">This table gives the records of the Major League Baseball teams at the end of the 2019 season (data from <link url="www.mlb.com" window="new">MLB</link>):</para><table id="eip-353" summary=".">
+<tgroup cols="3"><tbody>
+  <row>
+    <entry>Team</entry>
+    <entry>Wins</entry>
+    <entry>Losses</entry>
+  </row>
+  <row>
+    <entry>HOU</entry>
+    <entry>107</entry>
+    <entry>55</entry>
+  </row>
+  <row>
+    <entry>LAD</entry>
+    <entry>106</entry>
+    <entry>56</entry>
+  </row>
+  <row>
+    <entry>NYY</entry>
+    <entry>103</entry>
+    <entry>59</entry>
+  </row>
+  <row>
+    <entry>MIN</entry>
+    <entry>101</entry>
+    <entry>61</entry>
+  </row>
+  <row>
+    <entry>ATL</entry>
+    <entry>97</entry>
+    <entry>65</entry>
+  </row>
+  <row>
+    <entry>OAK</entry>
+    <entry>97</entry>
+    <entry>65</entry>
+  </row>
+  <row>
+    <entry>TBR</entry>
+    <entry>96</entry>
+    <entry>66</entry>
+  </row>
+  <row>
+    <entry>CLE</entry>
+    <entry>93</entry>
+    <entry>69</entry>
+  </row>
+  <row>
+    <entry>WSN</entry>
+    <entry>93</entry>
+    <entry>69</entry>
+  </row>
+  <row>
+    <entry>STL</entry>
+    <entry>91</entry>
+    <entry>71</entry>
+  </row>
+  <row>
+    <entry>MIL</entry>
+    <entry>89</entry>
+    <entry>73</entry>
+  </row>
+  <row>
+    <entry>NYM</entry>
+    <entry>86</entry>
+    <entry>76</entry>
+  </row>
+  <row>
+    <entry>ARI</entry>
+    <entry>85</entry>
+    <entry>77</entry>
+  </row>
+  <row>
+    <entry>BOS</entry>
+    <entry>84</entry>
+    <entry>78</entry>
+  </row>
+  <row>
+    <entry>CHC</entry>
+    <entry>84</entry>
+    <entry>78</entry>
+  </row>
+  <row>
+    <entry>PHI</entry>
+    <entry>81</entry>
+    <entry>81</entry>
+  </row>
+  <row>
+    <entry>TEX</entry>
+    <entry>78</entry>
+    <entry>84</entry>
+  </row>
+  <row>
+    <entry>SFG</entry>
+    <entry>77</entry>
+    <entry>85</entry>
+  </row>
+  <row>
+    <entry>CIN</entry>
+    <entry>75</entry>
+    <entry>87</entry>
+  </row>
+  <row>
+    <entry>CHW</entry>
+    <entry>72</entry>
+    <entry>89</entry>
+  </row>
+  <row>
+    <entry>LAA</entry>
+    <entry>72</entry>
+    <entry>90</entry>
+  </row>
+  <row>
+    <entry>COL</entry>
+    <entry>71</entry>
+    <entry>91</entry>
+  </row>
+  <row>
+    <entry>SDP</entry>
+    <entry>70</entry>
+    <entry>92</entry>
+  </row>
+  <row>
+    <entry>PIT</entry>
+    <entry>69</entry>
+    <entry>93</entry>
+  </row>
+  <row>
+    <entry>SEA</entry>
+    <entry>68</entry>
+    <entry>94</entry>
+  </row>
+  <row>
+    <entry>TOR</entry>
+    <entry>67</entry>
+    <entry>95</entry>
+  </row>
+  <row>
+    <entry>KCR</entry>
+    <entry>59</entry>
+    <entry>103</entry>
+  </row>
+  <row>
+    <entry>MIA</entry>
+    <entry>57</entry>
+    <entry>105</entry>
+  </row>
+  <row>
+    <entry>BAL</entry>
+    <entry>54</entry>
+    <entry>108</entry>
+  </row>
+  <row>
+    <entry>DET</entry>
+    <entry>47</entry>
+    <entry>114</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table><para id="eip-idm308617728">What is the median number of wins?
+</para></problem>
+    <solution id="eip-idm352312944"><para id="eip-idm319643200">82.5</para></solution>
+  </exercise>
+</note><example id="eip-636"><title>Finding the Median Using a Frequency Distribution</title><exercise id="eip-542"><problem id="eip-220">
+<para id="eip-725">In Example 3, we created a frequency distribution of the number of siblings of the people who attended a conflict resolution class. Hereâ€™s the result:</para><table id="eip-6023" summary=".">
+<tgroup cols="2"><thead>  <row>
+    <entry>Number of siblings</entry>
+    <entry>Frequency</entry>
+  </row>
+</thead><tbody>
+  <row>
+    <entry>0</entry>
+    <entry>5</entry>
+  </row>
+  <row>
+    <entry>1</entry>
+    <entry>13</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>3</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>2</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>1</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table><para id="eip-4422">What is the median of the number of siblings?
+</para>
+
+</problem>
+
+<solution id="eip-826">
+<para id="eip-idm324070896">There are 30 data values total, so the median is between the fifteenth and sixteenth values in the ordered list. There are five 0s and thirteen 1s according to the frequency distribution, so items one through five are all 0s and items six through eighteen are all 1s. Since both items fifteen and sixteen are 1s, the median is 1. </para>
+</solution>
+</exercise></example><note id="eip-idm307754624" class="your-turn"><exercise id="eip-idm307753744">
+    <problem id="eip-idm307753488"><para id="eip-idm307753360">In Your Turn 3, you found a frequency distribution for the number of people who shared a residence with people in a sample. Hereâ€™s the result:</para> <table id="eip-575" summary=".">
+<tgroup cols="2"><thead>  <row>
+    <entry>Number of people in the residence</entry>
+    <entry>Frequency</entry>
+  </row>
+</thead><tbody>
+  <row>
+    <entry>1</entry>
+    <entry>12</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>13</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>8</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>1</entry>
+  </row>
+</tbody>
+</tgroup>
+</table><para id="eip-899">Whatâ€™s the median of the number of people in these residences?</para></problem>
+    <solution id="eip-idm331256032"><para id="eip-idm331255904">2</para></solution>
+  </exercise>
+</note></section><section id="eip-664"><title>The Mean</title><para id="eip-3928">
+The final method we suggested for identifying the â€œaverageâ€ height was the most complicated. It involved a game where the player guesses a height, then figures out how far off that guess is from every single personâ€™s height. Those differences get squared and added together to get a score. Our next measure of centrality gives the lowest possible score. Verifying that fact is way, way beyond what we are covering in this book. Fortunately, though, we donâ€™t have to work all that hard to compute this measure: the <emphasis effect="italics">mean</emphasis>.
+</para><note id="eip-123"><title>Definition</title><para id="eip-idm325028256">Given a data set containing n total values, the <term>mean</term> of the data set is defined as the sum of all the data values, divided by <emphasis effect="italics">n</emphasis>.</para></note><para id="eip-947">This is a computation you have likely done before. In many places, including spreadsheet programs like Microsoft Excel and Google Sheets, this number is called the average. For statisticians, though, the word average has too many possible meanings, so they prefer the one weâ€™ll use: mean.</para><example id="eip-idm373700224"><title>Finding the Mean</title><exercise id="eip-idm373699056">
+    <problem id="eip-idm373698800"><para id="eip-idm373699584">Compute the mean of the numbers 12, 15, 17, 18, 18, and 19.</para></problem>
+    <solution id="eip-idm373698256"><para id="eip-idm376207248">The mean is the sum of the values, divided by the number of values on the list. So, we get:
+<m:math><m:mfrac><m:mrow><m:mn>12</m:mn><m:mo>+</m:mo><m:mn>15</m:mn><m:mo>+</m:mo><m:mn>17</m:mn><m:mo>+</m:mo><m:mn>18</m:mn><m:mo>+</m:mo><m:mn>18</m:mn><m:mo>+</m:mo><m:mn>19</m:mn></m:mrow><m:mn>6</m:mn></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mn>99</m:mn><m:mn>6</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>16.5</m:mn></m:math>.</para></solution> 
+  </exercise>
+</example><note id="eip-idm320746208" class="your-turn">
+  
+  <exercise id="eip-idm346821320"><problem id="eip-idm343478408"><para id="eip-idm306701472">Compute the mean of the numbers 5, 8, 11, 12, 12, 12, 15, 18, and 20. Round your answer to three decimal places.</para>
+</problem>
+    <solution id="eip-idm331837704"><para id="eip-idm332546704">12.556</para></solution>
+  </exercise></note><example id="eip-idm308070352"><title>Finding the Mean Using a Frequency Distribution</title><para id="eip-idm308069712">In Example 3, we created a frequency distribution of the number of siblings of the people who attended a conflict resolution class. Hereâ€™s the result: <table id="eip-7508" summary=".">
+<tgroup cols="2"><thead><row>
+    <entry>Number of siblings</entry>
+    <entry>Frequency</entry>
+  </row></thead><tbody>
+  <row>
+    <entry>0</entry>
+    <entry>5</entry>
+  </row>
+  <row>
+    <entry>1</entry>
+    <entry>13</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>3</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>2</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>1</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table></para>
+  <exercise id="eip-idm306971856"><problem id="eip-idm306971600"><para id="eip-idm306971472">What is the mode of the number of siblings?</para></problem>
+    <solution id="eip-idm306971088"><para id="eip-idm306970960">We compute the mean by adding up all the data values and then dividing by the number of data values on the list. Adding up the frequencies, we get <m:math><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>13</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>30</m:mn></m:math> data values in our list. Now, to find the sum of all the data values, we could simply reconstruct the raw data and add up all the numbers there. But, thereâ€™s an easier way! Remember that repeatedly adding a number to itself is the definition of multiplications! So, for example, since there are six 2s in our data, the sum of all those 2s must be <m:math><m:mn>6</m:mn><m:mo>Ã—</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>12</m:mn></m:math>. Letâ€™s add a column to our distribution for these products:</para><table id="eip-7198" summary=".">
+<tgroup cols="3"><thead><row>
+    <entry>Number of siblings</entry>
+    <entry>Frequency</entry>
+<entry>
+(Number of siblings)<m:math><m:mo>Ã—</m:mo></m:math>(Frequency)</entry>
+  </row></thead><tbody>
+  <row>
+    <entry>0</entry>
+    <entry>5</entry>
+    <entry>0</entry>
+  </row>
+  <row>
+    <entry>1</entry>
+    <entry>13</entry>
+    <entry>13</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>6</entry>
+    <entry>12</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>3</entry>
+    <entry>9</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>2</entry>
+    <entry>8</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>1</entry>
+    <entry>5</entry>
+  </row>
+</tbody>
+
+
+
+
+</tgroup>
+</table><para id="eip-idm371764752">So, the sum of all our data values is <m:math><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>13</m:mn><m:mo>+</m:mo><m:mn>6</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>=</m:mo><m:mn>30</m:mn></m:math>, and so the mean <m:math><m:mfrac><m:mn>47</m:mn><m:mn>30</m:mn></m:mfrac><m:mo>â‰ˆ</m:mo><m:mn>1.567</m:mn></m:math></para></solution> 
+  </exercise>
+</example><note id="eip-idm327746288" class="your-turn">
+  
+  <exercise id="eip-idm326821320">
+    <problem id="eip-idm341478408"><para id="eip-idm317816272">In Your Turn 3, you found a frequency distribution for the number of people who shared a residence with people in a sample. Hereâ€™s the result:<table id="eip-7178" summary=".">
+<tgroup cols="2"><thead><row>
+    <entry>Number of people in the residence</entry>
+    <entry>Frequency</entry>
+  </row></thead><tbody>
+  <row>
+    <entry>1</entry>
+    <entry>12</entry>
+  </row>
+  <row>
+    <entry>2</entry>
+    <entry>13</entry>
+  </row>
+  <row>
+    <entry>3</entry>
+    <entry>8</entry>
+  </row>
+  <row>
+    <entry>4</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry>5</entry>
+    <entry>1</entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table>
+Whatâ€™s the mean of the number of people in these residences?</para></problem>
+    <solution id="eip-idm331837744"><para id="eip-idm332846704"><m:math><m:mfrac><m:mn>91</m:mn><m:mn>40</m:mn></m:mfrac><m:mo>=</m:mo><m:mn>2.275</m:mn></m:math></para></solution>
+  </exercise></note><para id="eip-16">One slightly weird thing about computing the mode is what happens if there is no number in your data that appears more than once. In that case, by our definition, every data value is a mode. But according to some other definitions, the data would have no mode. In practice, though, it doesnâ€™t really matter; if no data value appears more than once, then the mode is not helpful at all as a measure of centrality.
+</para><note id="eip-idm211000912" class="video"><title>Computing Measures of Centrality Using Google Sheets </title><para id="eip-idm216600416">
+  <media id="fs-id3434082968249" alt="Creating Bar Graphs Using Google Sheets">
+<iframe width="660" height="371.4" src="https://www.youtube.com/watch?v=BVll247FEio"/>
+</media>
+</para>
+</note><para id="eip-910">Note that a recent update to Google Sheets introduced a new function called â€œMODE.MULTâ€ which will find every mode (not just the first one on the list).</para><example id="fs-idm351498976">
+  <title>Using Google Sheets to Compute Measures of Centrality</title>
+  <para id="fs-idm327634704">Example text.</para>
+  <exercise id="fs-idm349483776">
+    <problem id="fs-idm339062832"><para id="fs-idm351425568">The dataset â€˜InStateâ€™ contains the in-state tuitions of every college and university in the country that reported that data to the Department of Education (data accessed at data.ed.gov). Find the mode, median, and mean of those in-state tuition values.</para></problem>
+    <solution id="fs-idm352337008"><para id="fs-idm370144624">Google Sheets reports that the mode is $13,380, the median is $11,207, and the mean is $15,476.79.</para></solution> 
+  </exercise>
+</example><note id="fs-idm349804832" class="your-turn">
+  
+  <exercise id="fs-idm349712848">
+    <problem id="fs-idm352184688"><para id="fs-idm349911184">The dataset â€˜MLB2019â€™ gives the number of wins for every Major League Baseball team in the 2019 season. Use Google Sheets to find the mode(s), median, and mean.
+</para></problem>
+    <solution id="fs-idm352145136"><para id="fs-idm352145008">Modes: 72, 84, 93, 97<newline/>
+Median: 82.5<newline/>
+Mean: 90.967 (rounded to three decimal places)
+</para></solution>
+  </exercise>
+</note></section><section id="eip-296"><title>Which is Better: Mode, Median, or Mean?</title><para id="eip-223">
+Thatâ€™s a reasonable question. If all three of these things purport to measure the same thing (centrality), why do we need all three? The answer is complicated, as they all have their own strengths and weaknesses. The mode is really easy to compute, but it may not be unique (or, if no data value appears more than once, the mode is entirely unhelpful). As for the mean and median, the main difference between them is how each is affected by extreme values. Consider this example: the mean and median of 1, 2, 3, 4, 5 are both 3. But if we change that 5 to 10, the median is still 3, but the mean is now 4. Because of this, we say that the mean is sensitive to extreme values, while the median isnâ€™t. That can help us decide which of the two is more relevant for a given data set: if it is important that the really high or really low values are reflected in the measure of centrality, then the mean is better. If not, then we should stick with the median. This decision only really matters if the data are skewed; if the data are symmetric, then the mean and median are going to be approximately equal, and the distinction between them is irrelevant. If the data are skewed, the mean gets pulled in the direction of the skew (i.e., if the data are right-skewed, then the mean will be bigger than the median; if the data are left-skewed, the opposite relation is true).
+</para><example id="eip-idm371340112"><title>Which Measure of Centrality Should I Use?</title><para id="eip-idm371339472">For the following situations, decide which measure(s) of centrality would be best:
+</para>
+  <exercise id="eip-idm368235456">
+    <problem id="eip-idm368235200"><list id="eip-805" list-type="enumerated" number-style="arabic"><item>You found a used car that you like, and you want to know if the price is too high or too low. You find a list of sale prices for that make and model, and you see that the distribution of those prices is skewed to the right. Some of the prices at the high end are close to the original sale price of the car, so you guess that those might have really low mileage, or have options or other enhancements added on that increased the value (but which donâ€™t apply to the car you found).
+</item>
+<item>You are asked to analyze the responses to a survey. One of the questions asked, â€œHow strongly do you agree with the statement, â€˜I believe my elected representatives have my best interests in mind when they voteâ€™?â€ Responses are a number between 1 and 5, with 1 representing â€œstrongly disagreeâ€ and 5 representing â€œstrongly agree.â€
+</item>
+<item>You are asked to find the â€œaverageâ€ household income for a ZIP code. Those values are skewed right.</item>
+<item>Thinking back to the situation at the beginning of this module: you want to find â€œaverageâ€ height. The data youâ€™ve collected seem to be distributed symmetrically.</item></list></problem>
+    <solution id="eip-idm368234816">
+<list id="eip-825" list-type="enumerated" number-style="arabic"><item>In this situation, those high values donâ€™t really apply to your situation, so we donâ€™t want them to affect the results. Also, weâ€™re unlikely to find many repeated values, so the mode is probably not useful. Median is best.
+</item>
+<item>Here, we want to know what a typical result is. The mean doesnâ€™t really make sense; it involves adding the numbers together, so it would treat two â€œstrongly disagreeâ€ and two â€œstrongly agreeâ€ responses (those add to <m:math><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>1</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>+</m:mo><m:mn>5</m:mn><m:mo>=</m:mo><m:mn>12</m:mn></m:math>) as exactly the same as four â€œneutralâ€ responses (<m:math><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>+</m:mo><m:mn>3</m:mn><m:mo>=</m:mo><m:mn>12</m:mn></m:math>). But those are really different situations; the first shows a strong polarization in the responses, while the second represents strong indifference. The mode is probably the best choice, but the median would be good too.
+</item>
+<item>The mode isnâ€™t going to be useful because itâ€™s unlikely to find many households that have exactly the same income. The mean and median will be different because of the skew, so the choice comes down to the extreme values. In this case, the high values (remember, the data are skewed right, so high values are prevalent) are important for our analysis, so we want them to be reflected in the results. So, the mean is best. That being said, the median is also useful; it allows us to say something like â€œ50% of the households surveyed make more thanâ€ the median.
+</item>
+<item>Since the data are symmetric, the mean and the median will be about the same. So, it doesnâ€™t really matter which of those we choose.</item></list></solution> 
+  </exercise>
+</example><note id="fs-idm325396592" class="your-turn"><exercise id="fs-idm349977072">
+    <problem id="fs-idm352210288"><list id="eip-308" list-type="enumerated" number-style="arabic"><item>The data come from a survey question where the responses range from 1 (â€œnot interestedâ€) to 10 (â€œvery interestedâ€).</item>
+<item>The data are fuel efficiency measures (in miles per gallon) for various vehicles. The data are right-skewed.</item>
+<item>The data are scores on an exam, and they are left-skewed.
+</item></list></problem>
+    <solution id="fs-idm349821982"><list id="eip-3266" list-type="enumerated" number-style="arabic"><item>Mode or median
+</item>
+<item>Median or mean</item>
+<item>Median or mean
+</item></list></solution>
+  </exercise>
+</note></section><section id="fs-idm181207616" class="section-exercises"><title>Section Exercises</title><section id="fs-idm360795104"><title>Check Your Understanding</title><exercise id="eip-idm314470640"><problem id="eip-idm314470512">
+  <para id="eip-idm314470256"><link class="os-embed" url="#exercise/contmath80"/> </para></problem></exercise>
+<exercise id="eip-idm314469232"><problem id="eip-idm314469104">
+  <para id="eip-idm314468848"><link class="os-embed" url="#exercise/contmath81"/> </para></problem></exercise>
+<exercise id="eip-idm306658512"><problem id="eip-idm306658384">
+  <para id="eip-idm306658128"><link class="os-embed" url="#exercise/contmath82"/> </para></problem></exercise>
+<exercise id="eip-idm306657104"><problem id="eip-idm306656976">
+  <para id="eip-idm306656720"><link class="os-embed" url="#exercise/contmath83"/> </para></problem></exercise>
+<exercise id="eip-idm306655696"><problem id="eip-idm306655568">
+  <para id="eip-idm306655312"><link class="os-embed" url="#exercise/contmath84"/> </para></problem></exercise>
+<exercise id="eip-idm306654288"><problem id="eip-idm306654160">
+  <para id="eip-idm306653904"><link class="os-embed" url="#exercise/contmath85"/> </para></problem></exercise></section><section id="fs-idm367568352"><title>Exercises</title><exercise id="eip-398"><problem id="eip-614">
+  <para id="eip-349"><link class="os-embed" url="#exercise/contmath39"/> </para></problem>
+</exercise><exercise id="eip-128"><problem id="eip-620">
+  <para id="eip-329"><link class="os-embed" url="#exercise/contmath40"/> </para></problem>
+</exercise><exercise id="eip-579"><problem id="eip-6364">
+  <para id="eip-369"><link class="os-embed" url="#exercise/contmath41"/> </para></problem>
+</exercise><exercise id="eip-424"><problem id="eip-669">
+  <para id="eip-469"><link class="os-embed" url="#exercise/contmath42"/> </para></problem>
+</exercise><exercise id="eip-816"><problem id="eip-644">
+  <para id="eip-344"><link class="os-embed" url="#exercise/contmath43"/> </para></problem>
+
+</exercise><exercise id="eip-7733"><problem id="eip-114">
+  <para id="eip-14412"><link class="os-embed" url="#exercise/contmath44"/> </para></problem>
+</exercise>
+
+
+<exercise id="eip-773"><problem id="eip-1164">
+  <para id="eip-144"><link class="os-embed" url="#exercise/contmath54"/> </para></problem>
+</exercise>
+
+<exercise id="eip-98298"><problem id="eip-6741">
+  <para id="eip-341"><link class="os-embed" url="#exercise/contmath55"/> </para></problem>
+
+</exercise>
+
+<exercise id="eip-767726"><problem id="eip-456454">
+  <para id="eip-1423465"><link class="os-embed" url="#exercise/contmath62"/> </para></problem>
+
+</exercise>
+<exercise id="eip-769826"><problem id="eip-2454">
+  <para id="eip-1425"><link class="os-embed" url="#exercise/contmath63"/> </para></problem>
+
+</exercise>
+
+</section></section>
+<section id="fs-idm340346544" class="key-terms"><title>Key Terms</title><table id="eip-9504" summary="." class="unnumbered unstyled">
+<tgroup cols="4"><tbody>
+  <row>
+    <entry>Bimodal</entry>
+    <entry>Mean</entry>
+    <entry>Median</entry>
+    <entry>Mode</entry>
+  </row>
+</tbody>
+
+
+
+
+
+</tgroup>
+</table></section><section id="fs-idm328017168" class="key-concepts">
+  <title>Key Concepts</title>
+<list id="eip-2473"><item>Computing and interpreting measures of centrality
+</item>
+<item>Deciding which measure of centrality is best
+</item>
+</list></section>
+<section id="eip-idm360649232" class="formula-review">
+   <title>Formulas</title>
+   <para id="eip-idm371515552">Median: Suppose we have a set of data with n values, ordered from smallest to largest. If n is odd, then the median is the data value at position <m:math><m:mfrac><m:mrow><m:mi>n</m:mi><m:mo>+</m:mo><m:mn>1</m:mn></m:mrow><m:mn>2</m:mn></m:mfrac></m:math>. If <emphasis effect="italics">n</emphasis> is even, then we find the values at positions <m:math><m:mfrac><m:mi>n</m:mi><m:mn>2</m:mn></m:mfrac></m:math> and <m:math><m:mfrac><m:mi>n</m:mi><m:mn>2</m:mn></m:mfrac><m:mo>+</m:mo><m:mn>1</m:mn></m:math>. If those values are named <emphasis effect="italics">a</emphasis> and <emphasis effect="italics">b</emphasis>, then the median is defined to be <m:math><m:mfrac><m:mrow><m:mi>a</m:mi><m:mo>+</m:mo><m:mi>b</m:mi></m:mrow><m:mn>2</m:mn></m:mfrac></m:math>.
+</para>
+</section><section id="fs-idm321279584" class="eoc-videos">
+  <title>Videos</title>
+  <list id="eip-6280"><item><link url="https://www.youtube.com/watch?v=BVll247FEio" window="new">Computing Measures of Centrality Using Google Sheets</link></item></list></section></content>
+
+</document>
